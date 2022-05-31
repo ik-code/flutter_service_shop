@@ -15,9 +15,6 @@ final passwordRegExp =
     return passwordRegExp.hasMatch(this);
   }
 
-  bool get isNotNull{
-    return this!=null;
-}
 
   bool get isValidPhone{
     //^\+?0[0-9]{10}$

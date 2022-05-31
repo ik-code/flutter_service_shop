@@ -1,6 +1,4 @@
 import 'dart:async';
-import 'dart:convert';
-import 'dart:io';
 
 import 'package:country_code_picker/country_code_picker.dart';
 import 'package:flutter/material.dart';
@@ -14,7 +12,6 @@ import 'package:playground/widgets/stepper_pg.dart';
 import 'package:provider/provider.dart';
 import '../../providers/auth.dart';
 import '../../utilities/validation.dart';
-import 'package:http/http.dart' as http;
 
 enum AuthMode { Signup, Login }
 
@@ -332,10 +329,10 @@ class _StepperScreenState extends State<StepperScreen> {
                       return null;
                     },
                     onSaved: (inputPhone) {
-                      print('${inputPhone}');
+                      print(inputPhone);
                     },
                     onFieldSubmitted: (_) {
-                      print('${_phoneNumber.text}');
+                      print(_phoneNumber.text);
                     },
                   ),
                   const SizedBox(

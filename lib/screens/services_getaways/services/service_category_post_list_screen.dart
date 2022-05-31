@@ -1,14 +1,8 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:playground/utilities/constans.dart';
-import 'package:provider/provider.dart';
 
-import '../../../main.dart';
 import '../../../widgets/service_category_post_list_item.dart';
 import '../../menu_screen.dart';
-
-import 'package:http/http.dart' as http;
 
 class ServiceCategoryPostListScreen extends StatelessWidget {
   static const routeName = '/service-category-post-list';

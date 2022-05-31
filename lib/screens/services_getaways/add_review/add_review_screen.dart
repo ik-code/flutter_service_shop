@@ -22,7 +22,7 @@ class _AddReviewScreenState extends State<AddReviewScreen> {
   var _feedback = '';
   var _rating = 0.0;
   final _formKey = GlobalKey<FormState>();
-  var _serviceId;
+  int? _serviceId;
 
   final Uri _urlAddServiceReview =
       Uri.parse('https://lav.playground.wdscode.guru/api/service-review-add');

@@ -42,7 +42,7 @@ class _AccordionState extends State<Accordion> {
                   height: 0,
                 )),
           ),
-          Container(
+          SizedBox(
             height: 20,
             child: IconButton(
               iconSize: 30,

@@ -47,7 +47,7 @@ class _OTPControllerScreenState extends State<OTPControllerScreen> {
 
   Future<void> verifyPhoneNumber() async {
     await FirebaseAuth.instance.verifyPhoneNumber(
-        phoneNumber: '${widget.codeDigits + widget.phone}',
+        phoneNumber: widget.codeDigits + widget.phone,
         verificationCompleted: (PhoneAuthCredential credential) async {
           await FirebaseAuth.instance
               .signInWithCredential(credential)

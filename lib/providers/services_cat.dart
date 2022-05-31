@@ -34,6 +34,6 @@ class ServicesCatProvider with ChangeNotifier {
   }
 
   ServiceCat findById(String id) {
-    return _items.firstWhere((prod) => prod.id == id);
+    return _items.firstWhere((prod) => prod.id == id as int);
   }
 }

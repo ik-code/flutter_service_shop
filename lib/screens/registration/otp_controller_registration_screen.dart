@@ -50,7 +50,7 @@ class _OTPControllerRegistrationScreenState
 
   verifyPhoneNumber() async {
     await FirebaseAuth.instance.verifyPhoneNumber(
-        phoneNumber: '${widget.codeDigits + widget.phone}',
+        phoneNumber: widget.codeDigits + widget.phone,
         verificationCompleted: (PhoneAuthCredential credential) async {
           await FirebaseAuth.instance
               .signInWithCredential(credential)

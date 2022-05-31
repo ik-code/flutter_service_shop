@@ -33,9 +33,8 @@ class _SigninFormState extends State<SigninForm> {
     'api_personal_access_token': '',
   };
 
-  var _isLoading = false;
+  final _isLoading = false;
 
-  String _apiPersonalAccessToken = '';
   String _dialCodeDigits = "+1";
   String _phone = '';
   String _password = '';
@@ -76,10 +75,10 @@ class _SigninFormState extends State<SigninForm> {
       return;
     }
     print('Form was submitted');
-    print('DialCode: ${_dialCodeDigits}');
+    print('DialCode: $_dialCodeDigits');
 
-    print('Phone: ${_phone}');
-    print('Password: ${_password}');
+    print('Phone: $_phone');
+    print('Password: $_password');
 
     String resbody = await Provider.of<Auth>(context, listen: false)
         .login((_dialCodeDigits.substring(1) + _phone), _password);
@@ -148,9 +147,11 @@ class _SigninFormState extends State<SigninForm> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  FlatButton(
+                  TextButton(
                     child: const Text('Change the password?'),
-                    textColor: const Color(0xFF919191),
+                    style: TextButton.styleFrom(
+                      primary: const Color(0xFF919191),
+                    ),
                     onPressed: () {
                       Navigator.push(
                         context,
@@ -173,17 +174,19 @@ class _SigninFormState extends State<SigninForm> {
                     const Text(
                       "Don't have an account?",
                     ),
-                    FlatButton(
-                      child: const Text('Sing up'),
-                      textColor: Colors.orange,
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const StepperScreen()),
-                        );
-                      },
+                    TextButton(
+                    child: const Text('Sing up'),
+                    style: TextButton.styleFrom(
+                      primary:  Colors.orange,
                     ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const StepperScreen()),
+                      );
+                    },
+                  ),
                   ],
                 ),
                 const SizedBox(height: 30),

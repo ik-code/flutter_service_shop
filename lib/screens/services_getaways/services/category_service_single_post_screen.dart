@@ -182,10 +182,10 @@ class _CategoryServiceSinglePostScreenState
                             height: 24,
                           ),
                           imgList == []
-                              ? Container(
+                              ? const SizedBox(
                                   height: 190,
                                   width: double.infinity,
-                                  child: const Center(
+                                  child: Center(
                                     child: CircularProgressIndicator(),
                                   ),
                                 )
@@ -415,7 +415,7 @@ class _CategoryServiceSinglePostScreenState
                                 const SizedBox(
                                   height: 40,
                                 ),
-                                Container(
+                                SizedBox(
                                     width: double.infinity,
                                     child: OutlineButtonPG(
                                         text: 'Leave feedback',
@@ -428,9 +428,7 @@ class _CategoryServiceSinglePostScreenState
                                                         'id'],
                                               });
                                         })),
-                                const SizedBox(
-                                  height: 40,
-                                ),
+                                const SizedBox(height: 40,),
                                 Column(
                                   children: [
                                     ListView.builder(

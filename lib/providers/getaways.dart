@@ -34,6 +34,6 @@ class GetawaysProvider with ChangeNotifier {
   }
 
   Getaway findById(String id) {
-    return _items.firstWhere((prod) => prod.id == id);
+    return _items.firstWhere((prod) => prod.id  == id as int);
   }
 }

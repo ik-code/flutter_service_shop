@@ -14,7 +14,7 @@ class LogoPG extends StatelessWidget {
           height: heightMarginTop,
         ),
         Image(
-          image: AssetImage('images/${imgFile}'),
+          image: AssetImage('images/$imgFile'),
         ),
       ],
     );

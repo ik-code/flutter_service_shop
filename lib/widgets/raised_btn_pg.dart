@@ -11,11 +11,14 @@ class RaisedButtonPG extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return RaisedButton(
+    return ElevatedButton(
       onPressed: onPressedHandler,
+      style: ElevatedButton.styleFrom(
       padding: const EdgeInsets.all(0.0),
-      textColor: const Color(0xFF353535),
+      primary: const Color(0xFF353535),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(26)),
+      ),
+ 
       child: Ink(
         decoration: const BoxDecoration(
           gradient: LinearGradient(

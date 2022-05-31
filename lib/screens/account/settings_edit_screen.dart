@@ -106,10 +106,10 @@ class _SettingsEditScreenState extends State<SettingsEditScreen> {
       return;
     }
     print('Form was submitted');
-    print('DialCode: ${dialCodeDigits}');
+    print('DialCode: $dialCodeDigits');
 
-    print('Phone: ${_phone}');
-    print('Password: ${_password}');
+    print('Phone: $_phone');
+    print('Password: $_password');
   }
 
   @override

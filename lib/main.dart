@@ -6,11 +6,11 @@ import 'package:flutter/services.dart';
 import 'package:playground/screens/registration/stepper_screen.dart';
 import 'package:playground/screens/services_getaways/add_review/add_review_screen.dart';
 import 'package:playground/screens/services_getaways/services/category_service_single_post_screen.dart';
-import 'package:playground/screens/services_getaways/sg_list_sreen.dart';
+
 import 'package:playground/screens/singin_singup_screen.dart';
 import 'package:playground/screens/auth_screen.dart';
-import 'package:playground/screens/sms_verification/login_screen.dart';
-import 'package:playground/screens/sms_verification/congrats_screen.dart';
+
+
 import 'package:playground/screens/sms_verification/reset_password_screen.dart';
 import 'package:playground/utilities/constans.dart';
 import 'package:provider/provider.dart';
@@ -103,7 +103,7 @@ class Data extends ChangeNotifier {
 
   void updateAccount(input) {
     data = input;
-    print('Main Central State: ${data}');
+    print('Main Central State: $data');
     notifyListeners();
   }
 }
