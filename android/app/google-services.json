@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "865395158435",
+    "project_id": "phone-login-71ae9",
+    "storage_bucket": "phone-login-71ae9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:865395158435:android:bc4ad6cfc47536e2e77e16",
+        "android_client_info": {
+          "package_name": "com.example.playground"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "865395158435-0bqrrd497iv6hurq90oefcggcff9b94d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.playground",
+            "certificate_hash": "db4a9192ab6c421e750828d3cdbeb09c61aed480"
+          }
+        },
+        {
+          "client_id": "865395158435-es7pfnfp2mpadsnl07sf5fi17r1oipbd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyW5gghb7ha382jpsG_1Y8NF1c5YPAGS0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "865395158435-es7pfnfp2mpadsnl07sf5fi17r1oipbd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:865395158435:android:87f0350d7b4554bee77e16",
+        "android_client_info": {
+          "package_name": "com.example.playground"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "865395158435-es7pfnfp2mpadsnl07sf5fi17r1oipbd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyW5gghb7ha382jpsG_1Y8NF1c5YPAGS0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "865395158435-es7pfnfp2mpadsnl07sf5fi17r1oipbd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
