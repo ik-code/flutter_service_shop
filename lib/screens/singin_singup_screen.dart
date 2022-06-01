@@ -12,7 +12,7 @@ class SingInSingUpScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: kBackGroundWhitePG,
         body: SafeArea(
           child: Container(
             width: double.infinity,

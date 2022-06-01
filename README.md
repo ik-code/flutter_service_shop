@@ -1,6 +1,6 @@
 # playground
 
-A new Flutter project.
+# Flutter 3.0.1
 
 ## Getting Started
 

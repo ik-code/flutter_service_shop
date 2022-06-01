@@ -150,7 +150,7 @@ class _SigninFormState extends State<SigninForm> {
                   TextButton(
                     child: const Text('Change the password?'),
                     style: TextButton.styleFrom(
-                      primary: const Color(0xFF919191),
+                      primary: kGreyPG919191,
                     ),
                     onPressed: () {
                       Navigator.push(
@@ -177,7 +177,7 @@ class _SigninFormState extends State<SigninForm> {
                     TextButton(
                     child: const Text('Sing up'),
                     style: TextButton.styleFrom(
-                      primary:  Colors.orange,
+                      primary:  kOrangePG,
                     ),
                     onPressed: () {
                       Navigator.push(
@@ -215,8 +215,8 @@ class _SigninFormState extends State<SigninForm> {
         decoration: InputDecoration(
           labelStyle: TextStyle(
             color: _passwordFocusNode.hasFocus
-                ? const Color(0xFF898A8D)
-                : const Color(0xFF898A8D),
+                ? kGreyPG898A8D
+                : kGreyPG898A8D,
             fontFamily: 'Manrope',
             fontSize: 14,
             fontWeight: FontWeight.w500,
@@ -235,7 +235,7 @@ class _SigninFormState extends State<SigninForm> {
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(8.0),
             borderSide: const BorderSide(
-              color: Color(0xFFFB8D1C),
+              color: kOrangePG,
               width: 2.0,
             ),
           ),
@@ -243,7 +243,7 @@ class _SigninFormState extends State<SigninForm> {
           border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(8.0),
               borderSide: const BorderSide(
-                color: Color(0xFFFB8D1C),
+                color: kOrangePG,
               )),
         ),
         style: kInputTextStyle,
@@ -277,8 +277,8 @@ class _SigninFormState extends State<SigninForm> {
         decoration: InputDecoration(
           labelStyle: TextStyle(
             color: _passwordFocusNode.hasFocus
-                ? const Color(0xFF898A8D)
-                : const Color(0xFF898A8D),
+                ? kGreyPG898A8D
+                : kGreyPG898A8D,
             fontFamily: 'Manrope',
             fontSize: 14,
             fontWeight: FontWeight.w500,
@@ -290,7 +290,7 @@ class _SigninFormState extends State<SigninForm> {
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(8.0),
             borderSide: const BorderSide(
-              color: Color(0xFFFB8D1C),
+              color: kOrangePG,
               width: 2.0,
             ),
           ),
@@ -298,9 +298,9 @@ class _SigninFormState extends State<SigninForm> {
             icon: _isPasswordVisible
                 ? const Icon(
                     Icons.visibility_off,
-                    color: Color(0xFFFB8D1C),
+                    color: kOrangePG,
                   )
-                : const Icon(Icons.visibility, color: Color(0xFFFB8D1C)),
+                : const Icon(Icons.visibility, color: kOrangePG),
             onPressed: () =>
                 setState(() => _isPasswordVisible = !_isPasswordVisible),
           ),

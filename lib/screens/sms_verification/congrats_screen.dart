@@ -15,7 +15,7 @@ class _CongratsScreenState extends State<CongratsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: kBackGroundWhitePG,
       body: SafeArea(
         child: Container(
           width: double.infinity,

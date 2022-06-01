@@ -10,9 +10,9 @@ class ResetPasswordScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: kBackGroundWhitePG,
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: kBackGroundWhitePG,
         elevation: 0.0,
         leading: IconButton(
           icon: IconButton(

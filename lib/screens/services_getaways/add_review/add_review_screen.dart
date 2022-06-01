@@ -57,9 +57,9 @@ class _AddReviewScreenState extends State<AddReviewScreen> {
     });
 
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: kBackGroundWhitePG,
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: kBackGroundWhitePG,
         elevation: 0.0,
         toolbarHeight: 80,
         automaticallyImplyLeading: false,

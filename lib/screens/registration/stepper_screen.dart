@@ -408,7 +408,7 @@ class _StepperScreenState extends State<StepperScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: kBackGroundWhitePG,
         body: SafeArea(
           child: Container(
             width: double.infinity,
@@ -495,7 +495,7 @@ class _StepperScreenState extends State<StepperScreen> {
                               ),
                               FlatButton(
                                 child: const Text('Sign in'),
-                                textColor: Colors.orange,
+                                textColor: kOrangePG,
                                 onPressed: () {
                                   Navigator.push(
                                     context,

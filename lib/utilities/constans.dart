@@ -1,83 +1,106 @@
 import 'package:flutter/material.dart';
-//import 'package:google_fonts/google_fonts.dart';
+
+const kOrangePG = Color(0xFFFB8D1C);
+const kWhitePG = Color(0xFFFFFFFF);
+
+const kGreyPG = Color.fromRGBO(169, 169, 169, 1);
+const kGreyPG404040 = Color(0xFF404040);
+const kGreyPG353535 = Color(0xFF353535);
+const kGreyPG123123123_05 = Color.fromRGBO(123, 123, 123, 0.5);
+const kGreyPG898A8D = Color(0xFF898A8D);
+const kGreyPG999999 = Color(0xFF999999);
+const kGreyPG8C8C8C = Color(0xFF8C8C8C);
+const kGreyPG919191 = Color(0xFF919191);
+
+const kBlackPG = Color(0xFF212121);
+const kBlakcPG000 = Color(0xFF000000);
+
+const kGreenPG = Color(0xFF459297);
+
+const kErrorColor = Color(0XFFDA1414);
+
+const kBackGroundWhitePG = Color(0xFFFFFFFF);
+
+const kArrowAppBarBGArrowGradient1 = Color(0xFFFEFBDA);
+const kArrowAppBarBGArrowGradient2 = Color(0xFFFEE9D2);
 
 const kBigtitleTextStyle = TextStyle(
     fontFamily: 'Manrope',
     fontSize: 24.0,
     fontWeight: FontWeight.w700,
-    color: Color(0xFF212121));
+    color: kBlackPG);
 
 const kSubtitleTextStyle = TextStyle(
     fontFamily: 'Manrope',
     fontSize: 20.0,
     fontWeight: FontWeight.w700,
-    color: Color(0xFF212121));
+    color: kBlackPG);
 
 const kSubtitleBlackTextStyle = TextStyle(
     fontFamily: 'Manrope',
     fontSize: 14.0,
     fontWeight: FontWeight.w800,
-    color: Color(0xFF212121));
+    color: kBlackPG);
 
 const kSubtitleOrangeTextStyle = TextStyle(
     fontFamily: 'Manrope',
     fontSize: 14.0,
     fontWeight: FontWeight.w800,
-    color: Color(0xFFFB8D1C));
+    color: kOrangePG);
 
 const kSmallTextStyle = TextStyle(
     fontFamily: 'Manrope',
     fontSize: 12.0,
     fontWeight: FontWeight.w600,
-    color: Color(0xFF212121));
+    color: kBlackPG);
 
 const kSmallTextGreyStyle = TextStyle(
     fontFamily: 'Manrope',
     fontSize: 12.0,
     fontWeight: FontWeight.w600,
-    color: Color(0xFF8C8C8C));
+    color: kGreyPG8C8C8C);
 
 const kSmallTextBtnStyle = TextStyle(
     fontFamily: 'Manrope',
     fontSize: 12.0,
     fontWeight: FontWeight.w600,
-    color: Color(0xFF212121));
+    color: kBlackPG);
 
 const kSmallTextOrangeBtnStyle = TextStyle(
     fontFamily: 'Manrope',
     fontSize: 12.0,
     fontWeight: FontWeight.w600,
-    color: Color(0xFFFB8D1C));
+    color: kOrangePG);
 
 const kInputHintTextStyle = TextStyle(
     fontFamily: 'Manrope',
     fontSize: 14.0,
     fontWeight: FontWeight.w500,
-    color: Color(0xFF898A8D));
+    color: kGreyPG898A8D);
 
 const kInputTextStyle = TextStyle(
     fontFamily: 'Manrope',
     fontSize: 14.0,
     fontWeight: FontWeight.w800,
-    color: Color(0xFF212121));
+    color: kBlackPG);
 
 const kErrorTextStyle = TextStyle(
     fontFamily: 'Manrope',
     fontSize: 12.0,
     fontWeight: FontWeight.w500,
-    color: Color(0XFFDA1414));
+    color: kErrorColor);
 
 const kButtonTextStyle = TextStyle(
     fontFamily: 'Manrope',
     fontSize: 14.0,
     fontWeight: FontWeight.w800,
-    color: Color(0XFF353535));
+    color: kGreyPG353535);
 
 const kButtonTextOrangeStyle = TextStyle(
     fontFamily: 'Manrope',
     fontSize: 14.0,
     fontWeight: FontWeight.w800,
-    color: Color(0xFFFB8D1C));
+    color: kOrangePG);
 
 ////////////////////////////////////////////////////////////////////////////////
 ///Getaways/////////////////////////////////////////////////////////////////////
@@ -87,38 +110,38 @@ const kGetawaysTextBlackStyle = TextStyle(
     height: 1.68,
     fontSize: 15,
     fontWeight: FontWeight.w400,
-    color: Color(0xFF000000));
+    color: kBlakcPG000);
 
 const kGetawaysTitleBlackStyle = TextStyle(
     fontFamily: 'Manrope',
     height: 1.3,
     fontSize: 18,
     fontWeight: FontWeight.w700,
-    color: Color(0xFF212121));
+    color: kBlackPG);
 const kGetawaysDateTimeStyle = TextStyle(
     fontFamily: 'Manrope',
     height: 1.68,
     fontSize: 14,
     fontWeight: FontWeight.w500,
-    color: Color(0xFF999999));
+    color: kGreyPG999999);
 const kGetawaysDurationStyle = TextStyle(
     fontFamily: 'Manrope',
     height: 1.68,
     fontSize: 14,
     fontWeight: FontWeight.w500,
-    color: Color(0xFF459297));
+    color: kGreenPG);
 const kGetawaysDescriptisonStyle = TextStyle(
     fontFamily: 'Manrope',
     height: 1.68,
     fontSize: 14,
     fontWeight: FontWeight.w500,
-    color: Color(0xFF404040));
+    color: kGreyPG404040);
 const kGetawaysPriceStyle = TextStyle(
     fontFamily: 'Manrope',
     height: 1,
     fontSize: 24,
     fontWeight: FontWeight.w700,
-    color: Color(0xFF212121));
+    color: kBlackPG);
 ////////////////////////////////////////////////////////////////////////////////
 ///Services/////////////////////////////////////////////////////////////////////
 const kServicesCatListTitleBlackStyle = TextStyle(
@@ -126,159 +149,84 @@ const kServicesCatListTitleBlackStyle = TextStyle(
     height: 1,
     fontSize: 17,
     fontWeight: FontWeight.w600,
-    color: Color(0xFF212121));
+    color: kBlackPG);
 const kCatServiceSinglePostAuthorGreyStyle = TextStyle(
     fontFamily: 'Manrope',
     height: 1.68,
     fontSize: 14,
     fontWeight: FontWeight.w500,
-    color: Color(0xFF898A8D));
+    color: kGreyPG898A8D);
 const kCatServiceSinglePostAuthorOrangeStyle = TextStyle(
     fontFamily: 'Manrope',
     height: 1.68,
     fontSize: 14,
     fontWeight: FontWeight.w500,
-    color: Color(0xFFFB8D1C));
+    color: kOrangePG);
 const kCatServiceSinglePostTitleBlackStyle = TextStyle(
     fontFamily: 'Manrope',
     height: 1.3,
     fontSize: 24,
     fontWeight: FontWeight.w700,
-    color: Color(0xFF212121));
+    color: kBlackPG);
 const kCatServiceSinglePostTimeGreyStyle = TextStyle(
     fontFamily: 'Manrope',
     height: 1.68,
     fontSize: 14,
     fontWeight: FontWeight.w500,
-    color: Color(0xFF898A8D));
+    color: kGreyPG898A8D);
 const kCatServiceSinglePostTextBlackStyle = TextStyle(
     fontFamily: 'Manrope',
     height: 1.68,
     fontSize: 14,
     fontWeight: FontWeight.w400,
-    color: Color(0xFF404040));
+    color: kGreyPG404040);
 const kCatServiceSinglePostSubTitleOrangeStyle = TextStyle(
     fontFamily: 'Manrope',
     height: 1,
     fontSize: 14,
     fontWeight: FontWeight.w800,
-    color: Color(0xFFFB8D1C));
+    color: kOrangePG);
 const kCatServiceSinglePostReviewsTitleBlackStyle = TextStyle(
     fontFamily: 'Manrope',
     height: 1.3,
     fontSize: 20,
     fontWeight: FontWeight.w700,
-    color: Color(0xFF212121));
+    color: kBlackPG);
 const kCatServiceSinglePostReviewsTitleGreyStyle = TextStyle(
     fontFamily: 'Manrope',
     height: 1.3,
     fontSize: 20,
     fontWeight: FontWeight.w700,
-    color: Color(0xFF898A8D));
+    color: kGreyPG898A8D);
 const kCatServiceSinglePostReviewsRaitingNumberStyle = TextStyle(
     fontFamily: 'Manrope',
     height: 1.3,
     fontSize: 14,
     fontWeight: FontWeight.w800,
-    color: Color(0xFF404040));
+    color: kGreyPG404040);
 const kCatServiceSinglePostReviewsAuthorNumberStyle = TextStyle(
     fontFamily: 'Manrope',
     height: 1.3,
     fontSize: 18,
     fontWeight: FontWeight.w700,
-    color: Color(0xFF212121));
+    color: kBlackPG);
 
 const kAddReviewsHintStyle = TextStyle(
     fontFamily: 'Manrope',
     height: 1.4,
     fontSize: 14,
     fontWeight: FontWeight.w400,
-    color: Color.fromRGBO(123, 123, 123, 0.5));
+    color: kGreyPG123123123_05);
 
-    const kAddReviewsInputTextStyle = TextStyle(
+const kAddReviewsInputTextStyle = TextStyle(
     fontFamily: 'Manrope',
     height: 1.4,
     fontSize: 14,
     fontWeight: FontWeight.w400,
-    color: Color(0xFF404040));
+    color: kGreyPG404040);
 ////////////////////////////////////////////////////////////////////////////////
 ///StepperPG////////////////////////////////////////////////////////////////////
 
-const kOrangePG = Color(0xFFFB8D1C);
-const kWhitePG = Color(0xFFFFFFFF);
-const kGreyPg = Color.fromRGBO(169, 169, 169, 1);
 
 
 
-// final kBigtitleTextStyle = GoogleFonts.manrope(
-//     textStyle: const TextStyle(
-//         fontSize: 24.0,
-//         fontWeight: FontWeight.w700,
-//         color: Color.fromRGBO(33, 33, 33, 1)));
-
-// final kSubtitleOrangeTextStyle = GoogleFonts.manrope(
-//     textStyle: const TextStyle(
-//         fontSize: 14.0,
-//         fontWeight: FontWeight.w800,
-//         color: Color.fromRGBO(251, 141, 28, 1)));
-
-// final kSubtitleBlackTextStyle = GoogleFonts.manrope(
-//     textStyle: const TextStyle(
-//         fontSize: 14.0,
-//         fontWeight: FontWeight.w800,
-//         color: Color.fromRGBO(33, 33, 33, 1)));
-
-// final kSubtitleTextStyle = GoogleFonts.manrope(
-//     textStyle: const TextStyle(
-//         fontSize: 20.0, fontWeight: FontWeight.w700, color: Color.fromRGBO(33, 33, 33, 1)));
-
-// final kInputTextStyle = GoogleFonts.manrope(
-//     textStyle: const TextStyle(
-//         fontSize: 14.0, fontWeight: FontWeight.w800, color: Color(0xFF212121)));
-
-// final kButtonTextStyle = GoogleFonts.manrope(
-//     textStyle: const TextStyle(
-//         fontSize: 14.0,
-//         fontWeight: FontWeight.w800,
-//         backgroundColor: Colors.transparent,
-//         color: Color(0XFF353535)));
-
-// final kButtonTextOrangeStyle = GoogleFonts.manrope(
-//     textStyle: const TextStyle(
-//         fontSize: 14.0, fontWeight: FontWeight.w800, color: Color(0xFFFB8D1C)));
-
-// final kSmallTextStyle = GoogleFonts.manrope(
-//     textStyle: const TextStyle(
-//     fontSize: 12.0,
-//     fontWeight: FontWeight.w600,
-//     color: Color(0xFF212121)));
-
-// final kSmallTextGreyStyle = GoogleFonts.manrope(
-//     textStyle: const TextStyle(
-//     fontSize: 12.0,
-//     fontWeight: FontWeight.w600,
-//     color: Color(0xFF8C8C8C)));
-
-// final kSmallTextBtnStyle = GoogleFonts.manrope(
-//     textStyle: const TextStyle(
-//     fontSize: 12.0,
-//     fontWeight: FontWeight.w600,
-//     color: Color(0xFF212121)));
-
-// final kSmallTextOrangeBtnStyle = GoogleFonts.manrope(
-//     textStyle: const TextStyle(
-//     fontSize: 12.0,
-//     fontWeight: FontWeight.w600,
-//     color: Color(0xFFFB8D1C)));
-
-// final kInputHintTextStyle = GoogleFonts.manrope(
-//     textStyle: const TextStyle(
-//     fontSize: 14.0,
-//     fontWeight: FontWeight.w500,
-//     color: Color(0xFF898A8D)));
-
-// final kErrorTextStyle = GoogleFonts.manrope(
-//     textStyle: const TextStyle(
-//     fontSize: 12.0,
-//     fontWeight: FontWeight.w500,
-//     color: Color(0XFFDA1414)));

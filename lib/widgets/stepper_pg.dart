@@ -114,7 +114,7 @@ const TextStyle _kStepStyle = TextStyle(
   fontFamily: 'Manrope',
   fontWeight: FontWeight.w800,
   fontSize: 14.0,
-  color: Colors.white,
+  color: kWhitePG,
 );
 const Color _kErrorLight = Colors.red;
 final Color _kErrorDark = Colors.red.shade400;
@@ -330,8 +330,9 @@ class _StepperPGState extends State<StepperPG> with TickerProviderStateMixin {
       (int i) => GlobalKey(),
     );
 
-    for (int i = 0; i < widget.steps.length; i += 1)
+    for (int i = 0; i < widget.steps.length; i += 1) {
       _oldStates[i] = widget.steps[i].state;
+    }
   }
 
   @override
@@ -339,8 +340,9 @@ class _StepperPGState extends State<StepperPG> with TickerProviderStateMixin {
     super.didUpdateWidget(oldWidget);
     assert(widget.steps.length == oldWidget.steps.length);
 
-    for (int i = 0; i < oldWidget.steps.length; i += 1)
+    for (int i = 0; i < oldWidget.steps.length; i += 1) {
       _oldStates[i] = oldWidget.steps[i].state;
+    }
   }
 
   bool _isFirst(int index) {
@@ -360,7 +362,7 @@ class _StepperPGState extends State<StepperPG> with TickerProviderStateMixin {
   }
 
   Widget _buildLine(bool visible) {
-    return Container(
+    return SizedBox(
       width: visible ? 1.0 : 0.0,
       height: 16.0,
       // color: kOrangePG,
@@ -381,7 +383,7 @@ class _StepperPGState extends State<StepperPG> with TickerProviderStateMixin {
             shape: BoxShape.circle,
             border: Border.all(width: 2.0, color: Colors.white),
           ),
-          child: Container(
+          child: SizedBox(
             width: 31,
             height: 31,
             child: Center(
@@ -490,15 +492,16 @@ class _StepperPGState extends State<StepperPG> with TickerProviderStateMixin {
         duration: kThemeAnimationDuration,
       );
     } else {
-      if (widget.steps[index].state != StepPGState.error)
+      if (widget.steps[index].state != StepPGState.error) {
         return _buildCircle(index, false);
-      else
+      } else {
         return _buildTriangle(index, false);
+      }
     }
   }
 
   Widget _buildVerticalControls(int stepIndex) {
-    if (widget.controlsBuilder != null)
+    if (widget.controlsBuilder != null) {
       return widget.controlsBuilder!(
         context,
         ControlsDetailsPG(
@@ -508,6 +511,7 @@ class _StepperPGState extends State<StepperPG> with TickerProviderStateMixin {
           stepIndex: stepIndex,
         ),
       );
+    }
 
     final Color cancelColor;
     switch (Theme.of(context).brightness) {
@@ -848,13 +852,14 @@ class _StepperPGState extends State<StepperPG> with TickerProviderStateMixin {
     assert(debugCheckHasMaterial(context));
     assert(debugCheckHasMaterialLocalizations(context));
     assert(() {
-      if (context.findAncestorWidgetOfExactType<StepperPG>() != null)
+      if (context.findAncestorWidgetOfExactType<StepperPG>() != null) {
         throw FlutterError(
           'Steppers must not be nested.\n'
           'The material specification advises that one should avoid embedding '
           'steppers within steppers. '
           'https://material.io/archive/guidelines/components/steppers.html#steppers-usage',
         );
+      }
       return true;
     }());
     assert(widget.type != null);

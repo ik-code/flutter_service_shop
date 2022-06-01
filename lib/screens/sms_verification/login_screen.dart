@@ -31,9 +31,9 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: kBackGroundWhitePG,
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: kBackGroundWhitePG,
         elevation: 0.0,
         leading: IconButton(
           icon: IconButton(
@@ -43,8 +43,8 @@ class _LoginScreenState extends State<LoginScreen> {
               decoration: const BoxDecoration(
                 shape: BoxShape.circle,
                 gradient: LinearGradient(colors: [
-                  Color(0xFFFEFBDA),
-                  Color(0xFFFEE9D2),
+                  kArrowAppBarBGArrowGradient1,
+                  kArrowAppBarBGArrowGradient2,
                 ]),
               ),
               child: const Icon(Icons.arrow_back),

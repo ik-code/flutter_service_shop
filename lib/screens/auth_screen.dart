@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:playground/forms/signin_form.dart';
+import 'package:playground/utilities/constans.dart';
 
 class AuthScreen extends StatelessWidget {
   const AuthScreen({Key? key}) : super(key: key);
@@ -9,7 +10,7 @@ class AuthScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: kBackGroundWhitePG,
         body: SafeArea(
           child: Container(
             width: double.infinity,

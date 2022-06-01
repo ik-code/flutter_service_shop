@@ -133,8 +133,8 @@ class _ConfirmPastFormState extends State<ConfirmPastForm> {
         decoration: InputDecoration(
           labelStyle: TextStyle(
             color: _passwordFocusNode.hasFocus
-                ? const Color(0xFF898A8D)
-                : const Color(0xFF898A8D),
+                ? kGreyPG898A8D
+                : kGreyPG898A8D,
             fontFamily: 'Manrope',
             fontSize: 14,
             fontWeight: FontWeight.w500,
@@ -146,7 +146,7 @@ class _ConfirmPastFormState extends State<ConfirmPastForm> {
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(8.0),
             borderSide: const BorderSide(
-              color: Color(0xFFFB8D1C),
+              color: kOrangePG,
               width: 2.0,
             ),
           ),
@@ -154,9 +154,9 @@ class _ConfirmPastFormState extends State<ConfirmPastForm> {
             icon: _isPasswordVisible
                 ? const Icon(
                     Icons.visibility_off,
-                    color: Color(0xFFFB8D1C),
+                    color: kOrangePG,
                   )
-                : const Icon(Icons.visibility, color: Color(0xFFFB8D1C)),
+                : const Icon(Icons.visibility, color: kOrangePG),
             onPressed: () =>
                 setState(() => _isPasswordVisible = !_isPasswordVisible),
           ),
@@ -195,8 +195,8 @@ class _ConfirmPastFormState extends State<ConfirmPastForm> {
         decoration: InputDecoration(
           labelStyle: TextStyle(
             color: _passwordFocusNode2.hasFocus
-                ? const Color(0xFF898A8D)
-                : const Color(0xFF898A8D),
+                ? kGreyPG898A8D
+                : kGreyPG898A8D,
             fontFamily: 'Manrope',
             fontSize: 14,
             fontWeight: FontWeight.w500,
@@ -208,7 +208,7 @@ class _ConfirmPastFormState extends State<ConfirmPastForm> {
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(8.0),
             borderSide: const BorderSide(
-              color: Color(0xFFFB8D1C),
+              color: kOrangePG,
               width: 2.0,
             ),
           ),
@@ -216,9 +216,9 @@ class _ConfirmPastFormState extends State<ConfirmPastForm> {
             icon: _isPasswordVisible2
                 ? const Icon(
                     Icons.visibility_off,
-                    color: Color(0xFFFB8D1C),
+                    color: kOrangePG,
                   )
-                : const Icon(Icons.visibility, color: Color(0xFFFB8D1C)),
+                : const Icon(Icons.visibility, color: kOrangePG),
             onPressed: () =>
                 setState(() => _isPasswordVisible2 = !_isPasswordVisible2),
           ),

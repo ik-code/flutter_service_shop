@@ -86,7 +86,7 @@ class _OTPControllerRegistrationScreenState
   Widget build(BuildContext context) {
     return Scaffold(
       key: _scaffoldkey,
-      backgroundColor: Colors.white,
+      backgroundColor: kBackGroundWhitePG,
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,

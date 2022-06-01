@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:playground/screens/menu_screen.dart';
 import 'package:playground/screens/services_getaways/getaways/getaway_list_screen.dart';
 import 'package:playground/screens/services_getaways/services/services_category_list_screen.dart';
+import 'package:playground/utilities/constans.dart';
 import 'package:playground/widgets/logo_pg.dart';
 import 'package:http/http.dart' as http;
 import 'package:provider/provider.dart';
@@ -83,9 +84,9 @@ class _SGListSreenState extends State<SGListSreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: kBackGroundWhitePG,
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: kBackGroundWhitePG,
         elevation: 0.0,
         toolbarHeight: 80,
         title: Row(
@@ -132,7 +133,7 @@ class _SGListSreenState extends State<SGListSreen> {
                       labelStyle: const TextStyle(
                         fontFamily: 'Manrope',
                         fontSize: 14,
-                        color: Colors.white,
+                        color: kWhitePG,
                         fontWeight: FontWeight.w800,
                       ),
                       tabs: const [

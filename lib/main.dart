@@ -61,7 +61,7 @@ class MyApp extends StatelessWidget {
             theme: ThemeData(
               fontFamily: 'Manrope',
               primarySwatch: Colors.grey,
-              unselectedWidgetColor: kGreyPg,
+              unselectedWidgetColor: kGreyPG,
             ),
             home: const SingInSingUpScreen(),
             // const CategoryServiceSinglePostScreen(),
